@@ -13,7 +13,6 @@ export default {
 
 	data() {},
 	mounted() {
-		console.log("Im starting here");
 		this.spotifyRequestAuthorization();
 	},
 	methods: {
