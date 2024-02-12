@@ -6,7 +6,7 @@
 
 		<FilterComponent :filterItem="active_filter" @fetchTop="fetchTop" />
 		<h1 class="users-top" v-if="!loaders.get_user" data-aos="fade-in">
-			Users top <span class="users-top-selected">artists</span>
+			Users top <span class="users-top-selected">{{ active_filter }}</span>
 		</h1>
 		<div class="tracks-list" v-if="!loaders.get_top_tracks">
 			<TopItem
